@@ -14,7 +14,7 @@ export const Student = () => {
       const fetchStudents = async () => {
         try {
           const response = await fetch(`${API_URL}/students`);
-          if (!response.ok) throw new Error('Network response was not ok');
+          if (!response.ok) throw new Error('Network response was not ok1');
           const data = await response.json();
           setStudents(data);
         } catch (error) {
